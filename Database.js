@@ -12,7 +12,7 @@ module.exports = class Database {
   }
 
   savePublisher(publisher) {
-    this.#storage.publisher.push(publisher);
+    this.#storage.publishers.push(publisher);
   }
 
   findGameByName(gameName) {

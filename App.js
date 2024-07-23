@@ -22,7 +22,7 @@ module.exports = class App {
     App.#database.savePublisher(publisher);
   }
 
-  getPublisher() {
+  getPublishers() {
     return App.#database.find("publishers");
   }
 
@@ -78,6 +78,10 @@ module.exports = class App {
         App.#database.removeActionFiguresFromStock(product.name, quantity);
       }
     });
+  }
+
+  getGames() {
+    return App.#database.find("games");
   }
 
   getOrders() {
